@@ -6,6 +6,11 @@ pragma solidity ^0.8.0;
 // Reference - https://blog.finxter.com/how-to-delete-an-element-from-an-array-in-solidity/
 // Goerli Contract - https://goerli.etherscan.io/address/0xa7fcc40bc025f7250533f615e946a4847c3d650a
 
+//   Delete Index from dynamic area
+//   [0,1,2,3,4,5,6,7,9,10,11]; -> 8
+//   [0,1,3,4,5,6,7,9,10,11]; -> 2
+//   [0,1,3,4,5,6,9,10,11]; -> 7
+
 contract DynamicArray {
 
         uint[] public testArray;
