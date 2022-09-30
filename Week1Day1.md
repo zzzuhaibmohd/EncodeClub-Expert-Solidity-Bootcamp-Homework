@@ -21,11 +21,4 @@ Example: Granting approval or withdraw funds.
 One can easily prevent reaply attacks by adding nonce, chainId to the signature.
 
 ## How do we know who called a view function ?
-One can keep track of the caller of the view function using Solidity-Events.
-Example:
-
-//Declare an Event
-`event getPrice(address indexed _caller);`
-
-//Emit an event
-`emit getPriceCalled(msg.sender);`
+For view functions, the message is not signed and so the value of meg.sender cannot be verified.
