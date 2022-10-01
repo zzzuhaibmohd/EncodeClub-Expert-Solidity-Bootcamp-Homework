@@ -6,6 +6,8 @@
 It kind of serves as a sweet spot between what is too less and too much. Once can easily club multiple state variable declartions with in a single slot of storage.
 It also facilitates Keccak256 hash scheme and elliptic-curve computations. 
 
+256 bit integers are incredibly impractical and unnecessary for almost any application that the EVM is designed for, Like storing the totalSupply  of tokens, storing the user addresses etc., 
+
 ## What would happen if the implementation of a precompiled contract varied between Ethereum clients ?
 
 Precompiled contracts in Ethereum are contracts that include complex cryptographic computations, but do not require the overhead of the EVM.
