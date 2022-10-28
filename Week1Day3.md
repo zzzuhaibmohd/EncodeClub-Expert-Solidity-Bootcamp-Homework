@@ -13,4 +13,4 @@ It also facilitates Keccak256 hash scheme and elliptic-curve computations.
 Precompiled contracts in Ethereum are contracts that include complex cryptographic computations, but do not require the overhead of the EVM.
 Examples ecrecover, sha256 etc., Any change in the implementation of a precompiled contract between Ethereum clients may result in inconsistent results.
 For Example: Calculating the hash values, Verifying the sender of a message. If different Ethereum clients yield different results then the clients will
-never reach a state of consensus for that particular transaction verification.
+never reach a state of consensus for that particular transaction verification - A Consensus Break.
